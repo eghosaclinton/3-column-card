@@ -1,0 +1,155 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background:  hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.flex{
+    display: flex;
+}
+
+.card{
+    width: 95%;
+    margin: 5vh auto;
+    border-radius: 8.534125px;
+    max-width: 1000px;
+}
+
+.text{
+    width: 90%;
+    border-radius: 8.534125px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.text div{
+    padding: 3rem;
+    max-width: 634.5px;
+}
+
+.hero-icons{
+    display: block;
+}
+
+h2{
+    font-family: 'Big Shoulders Display' , sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.sedans{
+    width: 100%;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8.534125px;
+    border-top-right-radius: 8.534125px;
+
+}
+
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.suv{
+    width: 100%;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv button{
+    color: hsl(184, 100%, 22%);
+}
+
+.suv button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury{
+    border-bottom-left-radius: 8.534125px;
+    border-bottom-right-radius: 8.534125px;
+    width: 100%;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+
+.btn{
+    background-color: hsl(0, 0%, 95%);
+    width: 75%;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 59.1615px;
+    border: solid 2px hsl(0, 0%, 95%);
+    transition: 0.5s;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.attribution{
+    text-align: center; 
+    font-size: 0.6875rem;
+    padding: 2em;
+    color: #000;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+#user-name{
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(220, 15%, 55%);
+    font-family: monospace;
+    transition: 0.5s;
+}
+
+#user-name:hover{
+    text-shadow: red 1px 0, cyan -1px 0;
+}
+
+@media (min-width: 1024px){
+    .card{
+        margin: 15svh auto;
+        border-radius: 12.5px;
+    }
+
+    .sedans{
+        border-radius: 0;
+        border-top-left-radius: 12.5px;
+        border-bottom-left-radius: 12.5px;
+    }
+
+    .luxury{
+        border-radius: 0;
+        border-top-right-radius: 12.5px;
+        border-bottom-right-radius: 12.5px;
+    }
+
+    .text{
+        flex-direction: row;
+        border-radius: 12.5px;
+    }
+}
